@@ -13,7 +13,7 @@ export class BackEndService {
   getProfessionalSkill():MyProfessionalSkill[]{
     return [
       {groupName:'Graphic & Design',skills:['Photoshop','Substance painter','Substance Designer','3ds Max']},
-      {groupName:'Coding Languages',skills:['C++','PHP','JavaScript','HTML/CSS','Python']},
+      {groupName:'Coding Languages',skills:['C++','PHP','JavaScript','TypeScript','HTML/CSS','Python']},
       {groupName:'Frameworks/Systems',skills:['Angular','MVC','Visual Studio','Bootstrap']},
     ]
   }
