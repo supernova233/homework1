@@ -13,4 +13,17 @@ export const slideInLeft =
             })),
             animate('410ms ease-out')
         ])
+    ]);
+
+
+export const fadeIn =
+trigger('fadeInAnimetion',[
+    transition(':enter',[
+        style({
+            opacity:0,
+        }),
+        animate('810ms 500ms ease-out',style({
+            opacity:1,
+        }))
     ])
+]);
