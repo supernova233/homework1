@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+.bg-gray{
+    // background-color: #eaeaea;
+    height: calc(100vh - 56px);
+}
+.errorBox{
+    position: absolute;
+    top: calc(20%);
+    padding: 50px 0px;
+    // background-color: rgb(137, 255, 210);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    h1{
+        font-size: 9rem ;
+        // font-family: 'Fredoka One', cursive;
+        font-family: 'Press Start 2P', cursive;
+        font-weight: 900;
+        // background: -webkit-linear-gradient(-45deg, rgba(255,98,143,1) 0%, rgba(65,69,249,1) 100%) !important;
+        background: #25CC0F;
+        background: -webkit-linear-gradient(to bottom right, rgba(255,98,143,1) 0%, rgba(65,69,249,1) 100%);
+        background: -moz-linear-gradient(to bottom right, rgba(255,98,143,1) 0%, rgba(65,69,249,1) 100%);
+        background: linear-gradient(to bottom right, rgba(255,98,143,1) 0%, rgba(65,69,249,1) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.btn-c1{
+    color: rgb(240, 240, 240);
+    background: linear-gradient(-45deg, rgba(255,98,143,1) 0%, rgba(65,69,249,1) 100%) !important; 
+    border:none;
+    transition: 300ms;
+    font-weight: 500;
+    transition: 300ms ease-out ;
+}
+
+.btn-c1:hover{
+    color: #FFF;
+    background: linear-gradient(-45deg, rgba(255,98,143,1) 45%, rgba(65,69,249,1) 100%) !important; 
+    // background: linear-gradient(-45deg, rgba(255,253,98,1) 0%, rgba(255,98,143,1) 81%) !important;
+}

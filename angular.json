@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "portfolioApp"
+    }
+  },
+  "defaultProject": "portfolioApp",
+  "cli": {
+    "analytics": false
+  }
 }

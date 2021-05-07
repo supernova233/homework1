@@ -1,0 +1,119 @@
+.boxLeft{
+    height: calc(100vh - 56px)  !important;
+    min-height: 100%;
+    background-color: #ffffff;
+    text-align: left;
+    margin-left: 18%;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    font-family: 'Poppins', sans-serif;
+    
+
+}
+
+.welcomeText{
+    position:absolute;
+    top: 30%;
+}
+
+.btn-c1{
+    color: rgb(240, 240, 240);
+    background: linear-gradient(-45deg, rgba(255,98,143,1) 0%, rgba(65,69,249,1) 100%) !important; 
+    border:none;
+    transition: 300ms;
+    font-weight: 500;
+    transition: 300ms ease-out ;
+}
+
+.btn-c1:hover{
+    color: #FFF;
+    background: linear-gradient(-45deg, rgba(255,98,143,1) 45%, rgba(65,69,249,1) 100%) !important; 
+    // background: linear-gradient(-45deg, rgba(255,253,98,1) 0%, rgba(255,98,143,1) 81%) !important;
+}
+
+$imgBox:250px;
+.my-img{
+    
+    position: relative;
+    top: calc(30vh - #{$imgBox/2});
+    margin-left: 26%;
+    // display: block;
+    width: $imgBox;
+    height: $imgBox;
+    img{
+        width: $imgBox;
+        height: $imgBox;
+        border-radius: calc(#{$imgBox}/2);
+        border: 6px solid #FFF;
+        z-index: 100;
+    }
+}
+
+.circle{
+    position: relative;
+    top: -80%;
+    left: 18%;
+    width: $imgBox;
+    height: $imgBox;
+    // display: block;
+    border-radius: calc(#{$imgBox}/2);
+    // background-color: rgb(79, 141, 255);
+    background: linear-gradient(-45deg, rgba(255,98,143,1) 0%, rgba(65,69,249,1) 100%) !important;
+    z-index: -100;
+
+}
+
+@media screen and (min-height: 400px) {
+    .my-img{
+        top: calc(35vh - #{$imgBox/2});
+    }
+}
+
+@media screen and (min-height: 900px) {
+    .my-img{
+       
+        top: calc(33vh - #{$imgBox/2});
+    }
+}
+
+@media screen and (min-height: 1000px) {
+    $imgBox:350px;
+    .my-img{
+        width: $imgBox;
+        height: $imgBox;
+        top: calc(33vh - #{$imgBox/2});
+        img{
+            width: $imgBox;
+            height: $imgBox;
+            border-radius: calc(#{$imgBox}/2);
+        }
+    }
+    .circle{
+        width: $imgBox;
+        height: $imgBox;
+        border-radius: calc(#{$imgBox}/2);
+
+    }
+
+}
+
+@media screen and (min-height: 1400px) {
+    $imgBox:350px;
+    .my-img{
+        width: $imgBox;
+        height: $imgBox;
+        top: calc(32vh - #{$imgBox/2});
+        img{
+            width: $imgBox;
+            height: $imgBox;
+            border-radius: calc(#{$imgBox}/2);
+        }
+    }
+    .circle{
+        width: $imgBox;
+        height: $imgBox;
+        border-radius: calc(#{$imgBox}/2);
+
+    }
+}
