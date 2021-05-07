@@ -27,3 +27,34 @@ trigger('fadeInAnimetion',[
         }))
     ])
 ]);
+
+
+export const slideInTop = 
+trigger('slideInTopAnimation',[
+    state('void',style({
+        opacity:0,
+        transform: 'translateY(-30%)',
+    })),
+    transition('void => *',[
+        state('void',style({
+            transform: 'translateY(0%)',
+            opacity: 1
+        })),
+        animate('480ms ease-out')
+    ])
+]);
+
+export const slideInBottom = 
+trigger('slideInBottomAnimation',[
+    state('void',style({
+        opacity:0,
+        transform: 'translateY(20%)',
+    })),
+    transition('void => *',[
+        state('void',style({
+            transform: 'translateY(0%)',
+            opacity: 1
+        })),
+        animate('480ms ease-out')
+    ])
+]);

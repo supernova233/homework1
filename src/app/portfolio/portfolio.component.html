@@ -1,1 +1,16 @@
-<p>portfolio works!</p>
+<div class="row">
+    <div class="col-md-6">
+        <div @slideInLeftAnimation class="portfolioBox">
+            <h1> My Portfolio</h1>
+            <ul *ngFor="let myPortfolio of myPortfolios">
+                <b>{{myPortfolio.header}}</b>
+                <li class="text-secondary">{{myPortfolio.desc}}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="iconBox">
+            <i class="fas fa-award myIcon"></i>
+        </div>
+    </div>
+</div>

@@ -7,7 +7,7 @@ import {slideInLeft,fadeIn} from '../animation';
   selector: 'app-skill',
   templateUrl: './skill.component.html',
   styleUrls: ['./skill.component.scss'],
-  animations: [slideInLeft,fadeIn]
+  animations: [slideInLeft]
 })
 export class SkillComponent implements OnInit {
   

@@ -1,1 +1,15 @@
-<p>contact-me works!</p>
+<div class="row">
+    <div class="col-md-6">
+        <div class="iconBox">
+            <i class="bi bi-telephone myIcon"></i>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div @slideInTopAnimation class="contactBox mt-5">
+            <h1>Contact :</h1>
+            <ul class="text-muted" *ngFor="let myContact of myContacts" [innerHtml]="myContact.content">
+                
+            </ul>
+        </div>
+    </div>
+</div>
